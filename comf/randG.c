@@ -4,7 +4,7 @@
 
 int main() { 
 
-	int SN; 
+	int rNum;
 	int guess; 
 	int guessCount = 0; 
 	int guessLimit = 3; 
