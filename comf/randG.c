@@ -13,8 +13,6 @@ int main() {
 	printf("Guess the correct number (its from 0 - 9). \nYou have 3 guesses.\n\n");
 	
 	srand(time(NULL)); /* for a random number*/
-
-	for (SN = 0; SN < 1; SN++) { 
 	int rNum = rand() %10; /*%10 = number between 0 - 9 */ 
 	
 	while (guess != rNum && outOfGuesses == 0){  /*checks if guess - not edual to  secret number + keep looping if  outofguesses - equal to zero */
@@ -31,7 +29,6 @@ int main() {
 		printf("the secret number is %d\n", rNum);
 	}else {
 	printf("You win!\n");
-	}
 	}
 	return 0;
 }
