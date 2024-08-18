@@ -13,7 +13,7 @@
   				}
       			str[size] = '\0';
 			}
-	return str;
+	return 0;
 	}	
 	
 	
@@ -25,7 +25,7 @@ int main() {
 	char str[size]; /*empty space for random string*/
 	rand_string(str, size); /*fills empty space with 10 random characters*/
 
-	printf("New code: %s\n", str); /* executes the random string*/
+	printf("Your new password: %s\n", str); /* executes the random string*/
 
 
 	return 0; 
