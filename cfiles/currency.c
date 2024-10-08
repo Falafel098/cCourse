@@ -105,15 +105,6 @@ int main(int argc, char *argv[]) {
 	char *amount[] = argv[1];
 	char *in_currency[] = argv[2]; 
 	char *out_currency[] = argv[3]; 
-/*
-	char *amount[50] 
-	strcpy(amount, argv[1]);
-
-	char *in_currency[10]
-	strcpy(int_currency, argv[2]);
-
-	char *out_currency[10]
-	strcpy(out_currency, argv[3]); */
 
 	convert_currency(argv[1], argv[2], argv[3]);
 
