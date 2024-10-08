@@ -4,20 +4,20 @@
 	
 
 
-double convert_currency(char *amount[], char *in_currency[], char *out_currency[]) {
+void convert_currency(char *amount, char *in_currency, char *out_currency) {
 
-	char *amount = argv[1];
+/*	char *amount = argv[1];
 	char *in_currency = argv[2]; 
-	char *out_currency = argv[3];
-
+	char *out_currency = argv[3]; 
+*/
 	double result;
 
-	const int USD_EURO_RATE = 0.9056;
-	const int USD_DKK_RATE = 6.7377;
-	const int USD_IQD_RATE = 1310;
-	const int EURO_DKK_RATE = 7.4685;
-	const int EURO_IQD_RATE = 1452.4625;
-	const int DKK_IQD_RATE = 0.0051;
+	const double USD_EURO_RATE = 0.9056;
+	const double USD_DKK_RATE = 6.7377;
+	const double USD_IQD_RATE = 1310;
+	const double EURO_DKK_RATE = 7.4685;
+	const double EURO_IQD_RATE = 1452.4625;
+	const double DKK_IQD_RATE = 0.0051;
 
 		/*USD_EURO_RATE = 0.9056;*/
 	if (strcmp(in_currency, "usd") == 0 && strcmp(out_currency, "euro") == 0) {
@@ -101,12 +101,21 @@ double convert_currency(char *amount[], char *in_currency[], char *out_currency[
 } 
 
 int main(int argc, char *argv[]) {
-		
-	char *amount[50] 
-	char *in_currency[10] = {"usd", "euro", "dkk", "iqd"};
-	char *out_currency[10] = {"usd", "euro", "dkk", "iqd"};
 
-	convert_currency(amount, in_currency, out_currency);
+	char *amount[] = argv[1];
+	char *in_currency[] = argv[2]; 
+	char *out_currency[] = argv[3]; 
+/*
+	char *amount[50] 
+	strcpy(amount, argv[1]);
+
+	char *in_currency[10]
+	strcpy(int_currency, argv[2]);
+
+	char *out_currency[10]
+	strcpy(out_currency, argv[3]); */
+
+	convert_currency(argv[1], argv[2], argv[3]);
 
 
 
